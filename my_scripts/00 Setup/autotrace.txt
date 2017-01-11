@@ -1,0 +1,12 @@
+Настройка средства autotrace в sqlplus
+
+cd $ORACLE_HOME/sqlplus/admin
+sqlplus sys/oracle as sysdba
+
+В sqlplus выполнить создание роли plustrace:
+@plustrce
+grant plustrace to public
+
+
+Вклдчение вывода отчета о выполнении операторов DML:
+set autotrace on //есть различные опции данной комманды
